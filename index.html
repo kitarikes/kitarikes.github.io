@@ -72,17 +72,45 @@
             z-index: 10;
             /* スライダーより上に表示 */
         }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .diagonal-bg {
+            background: linear-gradient(135deg, #ef4444 70%, #f3f4f6 50%);
+        }
     </style>
 </head>
 
 <body class="bg-black text-white">
     <header class="fixed w-full z-50 p-4">
         <div class="container mx-auto flex justify-between items-center">
-            <h1>
-                <span class="text-white text-2xl font-bold">LIVEAGENT</span><br>
-                <span class="text-1xl font-bold">Saikyo</span>
-                <span class="text-sm align-top ml-1">INC</span>
-            </h1>
+            <div class="col-span-1 md:col-span-2 lg:col-span-2">
+                <div class="mb-4">
+                    <a href="#" class="flex items-center">
+                        <img src="static/images/LiveAgent_logo.png" alt="LiveAgent Logo" class="h-10 w-auto mr-3">
+                        <div>
+                            <h2 class="text-2xl font-bold">LIVEAGENT</h2>
+                            <p class="text-sm text-gray-400">saikyo inc</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
             <button id="menu-toggle" class="text-white focus:outline-none">
                 <svg class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16">
@@ -553,10 +581,109 @@
                 </div>
             </div>
         </section>
+        <section
+            class="w-full min-h-screen p-8 flex flex-col justify-center items-center relative overflow-hidden diagonal-bg mt-16">
+            <div class="max-w-6xl mx-auto px-4 relative z-10">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="text-white">
+                        <h2 class="text-5xl font-bold mb-4">代理店募集</h2>
+                        <div class="w-32 h-2 bg-blue-300 mb-6"></div>
+                        <p class="text-2xl mb-6">TikTok LIVE取扱代理店として<br>ライブコマース市場を盛り上げませんか？</p>
+                        <ul class="space-y-4 text-lg">
+                            <li class="flex items-center"><i
+                                    class="fas fa-check-circle mr-2 text-yellow-300"></i>業界最高クラス還元</li>
+                            <li class="flex items-center"><i
+                                    class="fas fa-check-circle mr-2 text-yellow-300"></i>諸費用0円設立！</li>
+                            <li class="flex items-center"><i
+                                    class="fas fa-check-circle mr-2 text-yellow-300"></i>未経験歓迎！手厚いサポート！</li>
+                            <li class="flex items-center"><i
+                                    class="fas fa-check-circle mr-2 text-yellow-300"></i>個人の副業でも設立可能！</li>
+                        </ul>
+                        <p class="text-sm mt-4">他にも特典多数！！</p>
+                        <div class="mt-8">
+                            <a href="#"
+                                class="bg-green-500 text-white font-bold inline-block px-8 py-4 rounded-full text-lg hover:bg-green-600 transition duration-300 flex items-center">
+                                <i class="fab fa-line mr-2"></i>無料相談はこちら →
+                            </a>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="absolute -top-4 -left-4 w-20 h-20 bg-blue-200 rounded-full opacity-50 float"></div>
+                        <div class="absolute -bottom-4 -right-4 w-32 h-32 bg-pink-200 rounded-full opacity-50 float"
+                            style="animation-delay: 1s;"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <footer class="bg-gray-900 text-white py-12 px-4">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-9 gap-8">
+                <!-- Logo and Company Name -->
+                <div class="col-span-1 md:col-span-2 lg:col-span-2 flex flex-col items-start">
+                    <div class="flex items-center mb-4">
+                        <img src="static/images/LiveAgent_logo.png" alt="LiveAgent Logo" class="h-10 w-auto mr-3">
+                        <div>
+                            <h2 class="text-2xl font-bold">LIVEAGENT</h2>
+                            <p class="text-sm text-gray-400">saikyo inc</p>
+                        </div>
+                    </div>
+                </div>
 
-    <!-- 代理店制度 -->
-    <main></main>
+                <!-- Main Menu -->
+                <nav
+                    class="col-span-1 md:col-span-4 lg:col-span-4 flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#" class="hover:text-gray-300 transition duration-300">LiveAgentとは</a>
+                    <a href="#" class="hover:text-gray-300 transition duration-300">LiveAgentの特徴</a>
+                    <a href="#" class="hover:text-gray-300 transition duration-300">所属メンバー</a>
+                    <a href="#" class="hover:text-gray-300 transition duration-300">よくある質問</a>
+                </nav>
+
+                <!-- Sub Menus -->
+                <div class="col-span-1 md:col-span-3 lg:col-span-3">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <h3 class="font-semibold mb-2">For Liver</h3>
+                            <ul class="space-y-2 text-sm text-gray-400">
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">ライバー掲示板</a></li>
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">ライバーインタビュー</a></li>
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">マネージャーインタビュー</a>
+                                </li>
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">オリジナルBGM</a></li>
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">オリジナルショップ</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-2">Contact</h3>
+                            <ul class="space-y-2 text-sm text-gray-400">
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">所属をご希望の方はこちら</a>
+                                </li>
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">企業の方はこちら</a></li>
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">代理店希望の方はこちら</a></li>
+                                <li><a href="#" class="hover:text-gray-300 transition duration-300">会社概要</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Copyright and Social Icons -->
+            <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm text-gray-400">&copy; 2024 saikyo,inc.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
     <div id="modal-overlay" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center">
