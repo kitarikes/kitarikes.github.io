@@ -16,9 +16,10 @@
                         primary: '#4ade80',
                         secondary: '#f59e0b',
                     }
-                }
-            }
+            },
         }
+    }
+
     </script>
     <style>
         .content {
@@ -154,7 +155,7 @@
             </div>
 
             <!-- モバイル版 -->
-            <section class="mobile-overlay md:hidden">
+            <section class="mobile-overlay md:hidden animate-on-scroll">
                 <div class="text-center text-white">
                     <h2 class="text-3xl font-bold mb-6">君の夢を、応援したい。</h2>
                     <h3 class="text-5xl font-bold mb-6">
@@ -165,7 +166,7 @@
                         「ライバー」をサポートする、<br>ライバーマネジメント事務所です。
                     </p>
                     <a href="#"
-                        class="bg-primary text-black px-8 py-3 rounded-full inline-block hover:bg-opacity-80 transition duration-300">
+                        class="bg-gradient-to-r text-white font-bold from-pink-500 to-purple-500 text-black px-8 py-3 rounded-full inline-block hover:bg-opacity-80 transition duration-300">
                         ライバー新規登録はこちら →
                     </a>
                 </div>
@@ -173,7 +174,7 @@
         </section>
 
         <!-- PC版 -->
-        <section class="w-full md:w-1/2 p-8 flex flex-col justify-center hidden md:flex">
+        <section class="w-full md:w-1/2 p-8 flex flex-col justify-center hidden md:flex animate-on-scroll">
             <div class="max-w-lg mx-auto md:ml-0">
                 <h2 class="text-4xl font-bold mb-6">君の夢を、応援したい。</h2>
                 <h3 class="text-5xl font-bold mb-6">
@@ -184,7 +185,7 @@
                     「ライバー」をサポートする、ライバーマネジメント事務所です。
                 </p>
                 <a href="#"
-                    class="bg-primary text-black px-8 py-3 rounded-full inline-block hover:bg-opacity-80 transition duration-300">
+                    class="bg-gradient-to-r from-pink-500 to-purple-500 text-white font-bold px-8 py-3 rounded-full inline-block hover:bg-opacity-80 transition duration-300">
                     ライバー新規登録はこちら →
                 </a>
             </div>
@@ -192,29 +193,27 @@
 
     </main>
     <!-- LiverAgentについて（概要） -->
-    <main class="min-h-screen pr-4 pl-4 md:pr-24 md:pl-24">
+    <main class="min-h-screen pr-4 pl-4 md:pr-24 md:pl-24 animate-on-scroll">
         <section class="w-full p-8 flex flex-col justify-center">
             <div class="mx-auto px-auto">
                 <div class="max-w-lg mx-auto md:ml-0 relative">
                     <!-- Content -->
                     <h2 class="text-1xl font-bold mb-6 relative text-center">
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-center">
+                        <span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-center">
                             ~夢を叶えるための充実した支援制度~
                         </span>
                     </h2>
                     <h3 class="text-4xl font-bold mb-6 relative text-center">
-                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-emerald-400">
-                            LiveAgent
-                        </span>の特徴
+                        LiveAgentの特徴
                     </h3>
-                    <p
-                        class="text-lg mb-8 relative z-10 rounded-lg text-center">
+                    <p class="text-lg mb-8 relative z-10 rounded-lg text-center">
                         LiveAgentに所属するメリットを紹介します。
                     </p>
                 </div>
             </div>
         </section>
-        <section class="max-w-7xl mx-auto">
+        <section class="max-w-7xl mx-auto animate-on-scroll">
             <!-- Feature Cards -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <!-- Card 1 -->
@@ -298,9 +297,158 @@
         </section>
     </main>
     <!-- 所属ライバー -->
-    <main></main>
+    <main class="min-h-screen p-4 md:pr-24 md:pl-24">
+        <section class="w-full p-8 flex flex-col justify-center animate-on-scroll">
+            <div class="mx-auto px-auto">
+                <div class="max-w-lg mx-auto md:ml-0 relative">
+                    <!-- Content -->
+                    <h2 class="text-1xl font-bold mb-6 relative text-center">
+                        <span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-center">
+                            ~ミスター・ミスのメンバーを筆頭に多種多様なメンバーが在籍~
+                        </span>
+                    </h2>
+                    <h3 class="text-4xl font-bold mb-6 relative text-center">
+                        所属メンバー
+                    </h3>
+                    <p class="text-lg mb-8 relative z-10 rounded-lg text-center">
+                        LiveAgentに所属しているメンバーを紹介します。
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-gray-900 text-white py-12 px-4 md:px-8 animate-on-scroll">
+            <div class="container mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Liver 1 -->
+                    <div
+                        class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                        <div class="p-1 bg-yellow-400">
+                            <img src="static/images/member/2.png" alt="たくくん"
+                                class="w-full h-64 object-cover object-top">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">たくくん</h4>
+                            <p class="text-gray-400 mb-4">癒し系ボイスで人気急上昇中！</p>
+                            <div class="space-x-3 inline-block">
+                                <a href="#"
+                                    class="text-white hover:text-gray-300 transition duration-300 flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 18 18"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    @111
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Liver 2 -->
+                    <div
+                        class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                        <div class="p-1 bg-blue-400">
+                            <img src="static/images/member/3.png" alt="りょうま"
+                                class="w-full h-64 object-cover object-top">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">りょうま</h4>
+                            <p class="text-gray-400 mb-4">クールビューティー代表！</p>
+                            <div class="space-x-3 inline-block">
+                                <a href="#"
+                                    class="text-white hover:text-gray-300 transition duration-300 flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 18 18"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    @111
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                        <div class="p-1 bg-pink-400">
+                            <img src="static/images/member/4.png" alt="華南" class="w-full h-64 object-cover object-top">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">華南</h4>
+                            <p class="text-gray-400 mb-4">クールビューティー代表！</p>
+                            <div class="space-x-3 inline-block">
+                                <a href="#"
+                                    class="text-white hover:text-gray-300 transition duration-300 flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 18 18"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    @111
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gray-800 rounded-lg overflow-hidden shadow-lg transform transition duration-300 hover:scale-105">
+                        <div class="p-1 bg-pink-400">
+                            <img src="static/images/member/4.png" alt="華南" class="w-full h-64 object-cover object-top">
+                        </div>
+                        <div class="p-4">
+                            <h4 class="text-xl font-bold mb-2">華南</h4>
+                            <p class="text-gray-400 mb-4">クールビューティー代表！</p>
+                            <div class="space-x-3 inline-block">
+                                <a href="#"
+                                    class="text-white hover:text-gray-300 transition duration-300 flex items-center">
+                                    <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 18 18"
+                                        aria-hidden="true">
+                                        <path fill-rule="evenodd"
+                                            d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3V0Z"
+                                            clip-rule="evenodd" />
+                                    </svg>
+                                    @111
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="text-center mt-12">
+                    <a href="#"
+                        class="inline-block bg-blue-500 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">
+                        View more →
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
     <!-- よくある質問 -->
-    <main></main>
+    <main class="min-h-screen p-4 md:pr-24 md:pl-24">
+        <section class="w-full p-8 flex flex-col justify-center animate-on-scroll">
+            <div class="mx-auto px-auto">
+                <div class="max-w-lg mx-auto md:ml-0 relative">
+                    <!-- Content -->
+                    <h2 class="text-1xl font-bold mb-6 relative text-center">
+                        <span
+                            class="bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-purple-500 text-center">
+                            ~所属するデメリットが全くない、安心のライバー事務所~
+                        </span>
+                    </h2>
+                    <h3 class="text-4xl font-bold mb-6 relative text-center">
+                        よくある質問
+                    </h3>
+                    <p class="text-lg mb-8 relative z-10 rounded-lg text-center">
+                        所属前のライバー様から過去にいただいた質問を紹介します。
+                    </p>
+                </div>
+            </div>
+        </section>
+        </main>
     <!-- 記事紹介 -->
     <main></main>
     <!-- 所属したい方へ/企業の方へ -->
@@ -351,6 +499,59 @@
             if (e.target === modalOverlay) {
                 closeModal();
             }
+        });
+    </script>
+    <script>
+        // Tailwind CSSのカスタムアニメーションクラスを定義
+        tailwind.config = {
+            theme: {
+                extend: {
+                   
+                    colors: {
+                        primary: '#4ade80',
+                        secondary: '#f59e0b',
+                    },
+                    animation: {
+                        'fade-in-up': 'fade-in-up 0.5s ease-out',
+                        'fade-in-left': 'fade-in-left 0.5s ease-out',
+                        'fade-in-right': 'fade-in-right 0.5s ease-out',
+                    },
+                    keyframes: {
+                        'fade-in-up': {
+                            '0%': { opacity: '0', transform: 'translateY(20px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        'fade-in-left': {
+                            '0%': { opacity: '0', transform: 'translateX(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        'fade-in-right': {
+                            '0%': { opacity: '0', transform: 'translateX(20px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                    },
+                },
+            },
+        };
+    
+        // アニメーション対象の要素を選択
+        const animatedElements = document.querySelectorAll('.animate-on-scroll');
+    
+        // Intersection Observerの設定
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-fade-in-up', 'opacity-100');
+                    entry.target.classList.remove('opacity-0');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+    
+        // 各要素を監視
+        animatedElements.forEach(element => {
+            element.classList.add('opacity-0');
+            observer.observe(element);
         });
     </script>
 </body>
